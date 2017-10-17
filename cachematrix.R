@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The following functions allow you to store the inversion of a matrix to prevent the need to re-calculate.
 
-## Write a short comment describing this function
+## Pass this function a matrix and it will create a matrix like object that can be used with the cahceSolve function.
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -20,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+##cacheSolve will check if the inversion has already been stored, if it has it will return it, if it has not been stored it will calculate using solve() and store it.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
